@@ -86,7 +86,7 @@
 		justify-content: space-between;
 		position: relative;
 		width: 1408px;
-		margin-top: 60px;
+		margin-top: 50px;
 		h1 {
 			font-weight: 700;
 			color: var(--text-color);
