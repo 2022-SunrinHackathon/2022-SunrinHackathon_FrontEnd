@@ -1,24 +1,24 @@
+:root{
+	--primary-color: #4b87fe;
+	--text-color:#505050;
+	--border-color: #eaeaea;
+	--title-text-color: #2B2B2B;
+	--sub-text-color: #a7a7a7;
+	--line-color: #e3e3e3;
+	--sub-text-bold-color: #929292;
+}
+
 body {
 	font-family: 'Pretendard', sans-serif;
 	font-weight: 500;
 	position: relative;
 	width: 100%;
 	min-height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	margin: 0;
-}
-copyright {
-	font-size: 11px;
 }
 #svelte {
 	position: relative;
-	width: 100%;
-	min-height: 100%;
-	margin: 0;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+
 }

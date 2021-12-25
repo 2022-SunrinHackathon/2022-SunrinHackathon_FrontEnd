@@ -104,7 +104,7 @@
 		flex-direction: column;
 		position: relative;
 		width: 750px;
-		padding-top: 60px;
+		margin-top: 60px;
 	}
 
 	.period {

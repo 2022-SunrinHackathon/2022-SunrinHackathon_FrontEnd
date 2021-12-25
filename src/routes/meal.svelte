@@ -3,17 +3,10 @@
 </script>
 
 <script lang="ts">
-	import { fade } from 'svelte/transition';
-	//와 !!!! 화이팅....!!!!#!#!##!#ㅇㄴㅁㄻㄻㄴㄹ
-	// 주석은 어떻게 다는거 배우셔썽요 저 코딩 쬐끔 배웟습니다 하핳 역시나야(??????)
-	// 비주얼스튜디오쓰다가 자바가니깐 신세계를 느꼈었...습니다. 여기가 더 편한듯? ㅋㅋㅋㅋ
 	const today = new Date();
-
 	const today_school_food = [
 		'고수무침 / 닭똥집 / 민트치킨 / 파인애플피자 / 번데기볶음 / 김치초코비빔밥 / 주스',
 		915
-		// 이 급식 나오면 자퇴함 학교 안다닐거야;;
-		// 최고의 음식인데요
 	];
 
 	const today_year = today.getFullYear();
@@ -22,7 +15,7 @@
 
 	const showed_dates = today_year + '-' + today_month + '-' + today_date;
 
-	function today_day(value) {
+	const today_day = value => {
 		if (value == -2) {
 			return '금';
 		} else if (value == -1) {
@@ -159,7 +152,7 @@
 		flex-direction: column;
 		position: relative;
 		width: 750px;
-		padding-top: 60px;
+		margin-top: 60px;
 	}
 
 	.text_row {
@@ -188,7 +181,7 @@
 
 		.calender {
 			border-radius: 15px;
-			border: 1px solid rgb(220, 220, 220);
+			border: 1px solid var(--border-color);
 			background-color: white;
 			padding: 5px;
 			padding-left: 20px;
@@ -198,7 +191,7 @@
 
 	.calender_box {
 		font-weight: 400;
-		border: 1px solid #eaeaea;
+		border: 1px solid var(--border-color);
 		border-radius: 20px;
 		background-color: white;
 		table-layout: fixed;
@@ -213,7 +206,7 @@
 						color: #fe744b;
 					}
 					&:last-child {
-						color: #4b87fe;
+						color: var(--primary-color);
 					}
 				}
 			}
@@ -228,7 +221,7 @@
 					}
 					&:last-child {
 						div {
-							color: #4b87fe;
+						color: var(--primary-color);
 						}
 					}
 					div {
@@ -252,23 +245,24 @@
 	}
 
 	.today_kcal {
-		color: rgb(180, 180, 180);
+		color: var(--sub-text-color);
 		margin-top: 20px;
 	}
 
 	.medium_title {
 		font-weight: 600;
 		font-size: 25px;
+		color: var(--text-color)
 	}
 
 	.small_title {
 		font-size: 17px;
 		font-weight: 500;
-		color: rgb(180, 180, 180);
+		color: var(--sub-text-bold-color);
 	}
 
 	.menu_box {
-		border: 1px solid #eaeaea;
+		border: 1px solid var(--border-color);
 		border-radius: 20px;
 		background-color: white;
 		width: 350px;
@@ -280,7 +274,7 @@
 	}
 
 	.date_box {
-		border: 1px solid #eaeaea;
+		border: 1px solid var(--border-color);
 		padding: 17px;
 		padding-top: 14px;
 		padding-bottom: 12px;
@@ -296,7 +290,7 @@
 		color: #606060;
 
 		.date_box_day {
-			color: #4b87fe;
+			color: var(--primary-color);
 		}
 
 		.day_weekend {
@@ -307,14 +301,9 @@
 		}
 	}
 
-	.wrap_content_today {
-		height: 300px;
-		margin-top: 50px;
-	}
-
 	.today_blue {
-		background-color: rgb(89, 133, 246);
-		border: 1px solid rgb(89, 133, 246);
+		background-color: var(--primary-color);
+		border: 1px solid var(--primary-color);
 		color: white;
 
 		.date_box_day {
