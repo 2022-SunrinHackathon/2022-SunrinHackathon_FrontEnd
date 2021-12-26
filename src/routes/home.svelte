@@ -265,11 +265,6 @@
 	.meal_img {
 		width: 340px;
 	}
-
-	.food_box {
-		display: inline-block;
-	}
-
 	.hello_to_user {
 		line-height: 34px;
 		font-size: 25px;
@@ -523,12 +518,4 @@
 		line-height: 43px;
 	}
 
-	.date_box {
-		padding: 17.5px;
-		width: 30px;
-		font-size: 16px;
-		line-height: 25px;
-		margin: 5px;
-		text-align: center;
-	}
 </style>

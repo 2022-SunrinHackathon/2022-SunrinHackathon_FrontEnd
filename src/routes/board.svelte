@@ -116,10 +116,6 @@
 		color: var(--text-color);
 		font-size: 18px;
 
-		.head {
-			display: flex;
-		}
-
 		.notice_box_child {
 			display: flex;
 			flex-direction: row;
@@ -162,9 +158,5 @@
 		.notice_box_body {
 			color: var(--sub-text-color) !important;
 		}
-	}
-
-	li {
-		list-style: none;
 	}
 </style>
