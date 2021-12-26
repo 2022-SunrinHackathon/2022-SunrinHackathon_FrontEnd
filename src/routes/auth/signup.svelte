@@ -505,39 +505,14 @@
 				color: #363636;
 				text-align: center;
 			}
-			.label_second_form {
-				text-align: left;
-			}
 		}
 	}
 
-	#second_form {
-		margin-top: 10px;
-	}
 
-	.personal {
-		margin-top: 15px;
-		margin-bottom: 30px;
-	}
-
-	select:active,
-	select:focus {
-		outline: none;
-	}
 
 	a {
 		color: #4b87fe;
 		text-decoration: none;
-	}
-
-	.alert_red {
-		color: red;
-		line-height: 27px;
-	}
-
-	.alert_red,
-	.alert_black {
-		font-weight: 400;
 	}
 
 	.logo {
@@ -545,54 +520,6 @@
 		text-align: center;
 		display: inline-block;
 		margin-bottom: 40px;
-	}
-
-	.signin_1 {
-		background-image: url('/images/user.svg');
-		background-repeat: no-repeat;
-		background-position: 12px center;
-		border-radius: 15px 15px 0px 0px;
-		border-bottom: none;
-	}
-
-	.img_pw {
-		background-image: url('/images/lock.svg');
-		background-repeat: no-repeat;
-		background-position: 12px center;
-	}
-
-	.signin_2 {
-		border-top: none;
-		border-bottom: none;
-	}
-
-	.signin_3 {
-		border-radius: 0px 0px 15px 15px;
-		border-top: none;
-	}
-
-	.signin_4,
-	.signin_5,
-	.signin_6 {
-		border-radius: 15px 15px 15px 15px;
-		width: 100px;
-	}
-
-	.signin_7 {
-		border-radius: 15px 15px 15px 15px;
-		width: 350px;
-		background: url('/images/arrow_bottom.svg') no-repeat right 15px center;
-		background-color: rgb(240, 240, 240);
-		padding-left: 15px;
-	}
-
-	.pw_input {
-		letter-spacing: 2px;
-	}
-
-	.login_form {
-		text-align: center;
-		display: inline-block;
 	}
 
 	input:focus {
@@ -603,27 +530,6 @@
 		color: rgb(180, 180, 180);
 	}
 
-	.form2_birth {
-		width: 110px;
-		display: inline-block;
-		padding: 15px;
-		margin: 5px;
-		margin-left: 0;
-		padding-right: 40px;
-		background: url('/images/arrow_bottom.svg') no-repeat right 15px center;
-		background-color: rgb(240, 240, 240);
-	}
-
-	select {
-		appearance: none;
-	}
-
-	.label_second_form {
-		font-size: 19px;
-		text-align: left;
-		margin: 15px;
-		margin-left: 5px;
-	}
 
 	.underline {
 		text-decoration: underline;

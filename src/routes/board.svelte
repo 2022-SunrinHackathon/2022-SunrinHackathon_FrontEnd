@@ -57,7 +57,7 @@
 	</div>
 
 	<div class="box_container">
-		<h1 class="box_title">대나무숲</h1>
+		<h1 class="box_title">작품전시회</h1>
 		<div class="notice_box">
 			<div class="notice_box_child notice_box_head">
 				<div class="notice_box_content notice_box_title">제목</div>
@@ -86,11 +86,10 @@
 		justify-content: space-between;
 		position: relative;
 		width: 1408px;
-		padding-top: 50px;
-
+		margin-top: 50px;
 		h1 {
 			font-weight: 700;
-			color: #333333;
+			color: var(--text-color);
 		}
 	}
 
@@ -111,15 +110,11 @@
 		justify-content: space-between;
 		background: #ffffff;
 		border-radius: 30px;
-		border: 1px solid #e3e3e3;
+		border: 1px solid var(--border-color);
 		padding: 30px;
 		width: 610px;
-		color: #2b2b2b;
+		color: var(--text-color);
 		font-size: 18px;
-
-		.head {
-			display: flex;
-		}
 
 		.notice_box_child {
 			display: flex;
@@ -134,7 +129,7 @@
 
 			.notice_box_title {
 				width: 420px;
-				color: #505050;
+				color: var(--text-color);
 			}
 
 			.notice_box_date {
@@ -149,7 +144,7 @@
 			}
 
 			.blue_point {
-				color: #4b87fe;
+				color: var(--primary-color);
 				padding-right: 20px;
 			}
 		}
@@ -157,15 +152,11 @@
 		.notice_box_head {
 			padding-top: 5px;
 			padding-bottom: 20px;
-			color: #505050;
+			color: var(--text-color);
 		}
 
 		.notice_box_body {
-			color: #9f9f9f !important;
+			color: var(--sub-text-color) !important;
 		}
-	}
-
-	li {
-		list-style: none;
 	}
 </style>

@@ -8,6 +8,9 @@
 	let password: string | null = '';
 	let id: string | null = '';
 	let user_list: string[] = ['wugusaud77', 'iamraram'];
+	const login = () => {
+		alert(`${id} / ${password}`);
+	}
 </script>
 
 <div class="container">
@@ -90,7 +93,7 @@
 			<button
 				type="button"
 				class="signin_button"
-				on:click|preventDefault={() => emailCheck(email)}
+				on:click|preventDefault={() => login(id,password)}
 				in:fly={{ x: -25, duration: 1000 }}
 			>
 				로그인

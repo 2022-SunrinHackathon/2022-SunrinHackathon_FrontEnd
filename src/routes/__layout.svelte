@@ -1,32 +1,29 @@
+<script context="module">
+	export const load = async ({page}) => ({
+		props: {
+			key: page.path
+		}
+	})
+</script>
+
 <script>
+	import '/src/app.css';
 	import Header from '$lib/common/Header.svelte';
 	import Footer from '$lib/common/Footer.svelte';
-	import { fade } from 'svelte/transition';
+	import PageTransition from "$lib/common/PageTransition.svelte";
+	export let key;
 </script>
 
 <Header user="332" />
 
-<main transition:fade>
+<PageTransition refresh={key}>
 	<slot />
-</main>
+</PageTransition>
 
 <Footer />
 
 <style lang="scss">
-	main {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		position: relative;
-		width: 100%;
-		height: auto;
-		background-color: #f7f7f7;
-		margin-top: 81px;
-		background-image: url('/images/shapes.png');
-		background-repeat: repeat-y;
-		slot {
-			z-index: 9999;
-		}
+	slot {
+		z-index: 9999;
 	}
 </style>
