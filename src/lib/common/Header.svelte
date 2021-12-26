@@ -208,14 +208,14 @@
 						color: #9f9f9f;
 					}
 					&.selected {
-						color: #4b87fe;
+						color: var(--primary-color);
 						svg {
 							path {
-								fill: #4b87fe;
+								fill: var(--primary-color);
 							}
 							g {
 								path {
-									fill: #4b87fe;
+									fill: var(--primary-color);
 								}
 							}
 						}

@@ -1,5 +1,6 @@
 <script>
 	import { fade } from 'svelte/transition';
+	import '/src/app.css';
 </script>
 
 <main transition:fade>
