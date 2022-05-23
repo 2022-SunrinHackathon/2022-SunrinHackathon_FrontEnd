@@ -1,0 +1,172 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+body {
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    color: rgb(190, 190, 190);
+    text-decoration: none;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.content {
+    width: 700px;
+}
+
+.blue {
+    color: blue;
+    text-decoration: underline;
+}
+
+header {
+    width: 700px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.big_title {
+    margin-bottom: 5px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.small_title {
+    color: rgb(190, 190, 190);
+    font-size: 18px;
+}
+
+.mid_box {
+    color: rgb(50, 50, 50);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 18px;
+    line-height: 32px;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.back {
+    width: 700px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img_desc {
+    display: flex;
+    width: 700px;
+    height: 330px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+}
+
+.fir {
+    background-size: 100%;
+    background-position: center center;
+    background-image: url('img/fir_fir.png');
+}
+
+.sec {
+    background-size: 73%;
+    background-position: left center;
+    background-image: url('img/sec_sec.png');
+}
+
+.thi {
+    background-size: 95%;
+    background-position: center center;
+    background-image: url('img/thi_thi.png');
+}
+
+.f {
+    background-size: 95%;
+    background-position: center center;
+    background-image: url('img/four_four.png');
+}
+
+.fi {
+    background-size: 87%;
+    background-position: center center;
+    background-image: url('img/fif_fif.png');
+}
+
+.si {
+    background-size: 95%;
+    background-position: center center;
+    background-image: url('img/six_six.png');
+}
+
+.se {
+    height: 250px;
+    background-size: 95%;
+    background-position: center center;
+    background-image: url('../img/sevenp.png');
+}
+
+.title {
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-inline-start: 20px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+@media (max-width:750px){
+
+    .img_desc {
+        width: 300px;
+    }
+
+    .big_title {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .mid_box {
+        width: 300px;
+    }
+
+    header {
+        width: 300px;
+    }
+
+    .titles {
+        width: 280px;
+        line-height: 25px;
+    }
+
+    .back {
+        width: 300px;
+    }
+
+    .content {
+        width: 300px;
+    }
+}
