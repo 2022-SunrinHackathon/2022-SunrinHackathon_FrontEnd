@@ -1,14 +1,13 @@
 <template>
-<h1>{{ count }}</h1>
+  <button @click="$store.commit('countAdd')">클릭</button>
+  <h1>{{ $store.state.count }}</h1>
 </template>
 
 <script>
 export default {
   name: "mainPage",
-  data(){
-    return {
-      count : 0,
-    }
+  data() {
+    return {}
   }
 }
 </script>
