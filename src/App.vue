@@ -14,4 +14,9 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+
+.page {
+  width : 100%;
+  height: 100vh;
+}
 </style>

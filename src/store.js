@@ -1,14 +1,14 @@
 import { createStore } from 'vuex'
 
 const store = createStore({
-    state(){
+    state() {
         return {
-            count : 10
+            postList: []
         }
     },
     mutations : {
-        countAdd(state){
-            state.count += 1
+        updatePost(state, data){
+            state.postList = [...state.postList, ...data]
         }
     }
 })

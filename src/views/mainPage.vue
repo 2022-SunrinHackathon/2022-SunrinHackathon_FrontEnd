@@ -1,13 +1,22 @@
 <template>
-  <button @click="$store.commit('countAdd')">클릭</button>
-  <h1>{{ $store.state.count }}</h1>
+  <button @click="a">클릭</button>
+
+<!--  {{ $store.state.postList }}-->
+  <div v-for="i, n in $store.state.postList" :key="n">{{ i }}</div>
 </template>
 
 <script>
+import { getPost } from "/src/api"
+
 export default {
   name: "mainPage",
   data() {
     return {}
+  },
+  methods: {
+    a(){
+      getPost()
+    }
   }
 }
 </script>
