@@ -1,6 +1,6 @@
 input:not(input[type=checkbox]) {
     width: 100%;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 500;
 
     background: #EBEBEB;
@@ -18,7 +18,7 @@ button {
     width: 100%;
 
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
 
     background: #444444;
