@@ -7,15 +7,15 @@
     <main>
       <label class="email input-field">
         <h5>이메일/아이디</h5>
-        <input type="email" placeholder="이메일 주소를 입려개주세요">
-        <input type="text" placeholder="아이디를 입력해주세요">
+        <input type="email" placeholder="이메일 주소를 입려개주세요" v-model="inputEmail">
+        <input type="text" placeholder="아이디를 입력해주세요" v-model="inputId">
 
       </label>
 
       <label class="password input-field">
         <h5>비밀번호</h5>
-        <input type="password" class="pw-first" placeholder="비밀번호를 입력해주세요(8자리 이상)">
-        <input type="password" class="pw-second" placeholder="비밀번호를 확인해주세요">
+        <input type="password" class="pw-first" placeholder="비밀번호를 입력해주세요(8자리 이상)" v-model="inputPassword">
+        <input type="password" class="pw-second" placeholder="비밀번호를 확인해주세요" v-model="inputPasswordRe">
       </label>
 
       <button class="login">회원가입</button>
@@ -29,7 +29,16 @@
 
 <script>
 export default {
-  name: "loginPage.vue"
+  name: "loginPage.vue",
+  data(){
+    return {
+      inputEmail : "",
+      inputId : "",
+
+      inputPassword : "",
+      inputPasswordRe : "",
+    }
+  }
 }
 </script>
 
