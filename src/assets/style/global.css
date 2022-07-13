@@ -3,11 +3,20 @@ input:not(input[type=checkbox]) {
     font-size: 16px;
     font-weight: 500;
 
-    background: #EBEBEB;
+    background: #F0F0F0;
     border: 1px solid transparent;
     border-radius: 10px;
 
     padding: 17px;
+}
+
+input:not(input[type=checkbox])::placeholder {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #969696;
 }
 
 input:not(input[type=checkbox]):focus {
@@ -31,6 +40,12 @@ button {
     cursor: pointer;
 }
 
+.cr-p {
+    cursor: pointer;
+}
+
+
+/* 디버깅 테스트용 */
 .bg-r {
     background-color: #f00;
 }

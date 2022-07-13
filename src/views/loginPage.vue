@@ -20,14 +20,14 @@
           <input type="checkbox"> 비밀번호 기억하기
         </label>
 
-        <div class="find-password">비밀번호/아이디 찾기</div>
+        <div class="find-password cr-p">비밀번호/아이디 찾기</div>
       </div>
 
       <button class="login">로그인</button>
     </main>
 
     <div class="signup">
-      계정이 없으신가요? <span class="goto-signup">회원가입하기</span>
+      계정이 없으신가요? <span class="goto-signup cr-p">회원가입하기</span>
     </div>
   </div>
 </template>
@@ -39,6 +39,9 @@ export default {
 </script>
 
 <style scoped>
+.login-page {
+  padding-top: 135px;
+}
 h1 {
   font-style: normal;
   font-weight: 700;
@@ -46,11 +49,7 @@ h1 {
   line-height: 44px;
   /* identical to box height */
 
-
   color: #000000;
-
-
-  margin-top: 135px;
 }
 
 .msg {
@@ -70,6 +69,7 @@ main {
 
 label {
   display: block;
+  cursor: pointer;
 }
 
 label h5 {
