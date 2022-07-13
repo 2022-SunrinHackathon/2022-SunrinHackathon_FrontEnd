@@ -25,6 +25,8 @@
       </div>
 
       <button class="login">로그인</button>
+
+<!--      <button class="google-login"><img src="src/assets/login/google_logo.svg" alt="구글 로고">Google로 로그인</button>-->
     </div>
 
     <div class="signup">계정이 없으신가요? <span class="goto-signup">회원가입하기</span></div>
@@ -114,6 +116,20 @@ h1 {
 
 button.login {
   margin-top: 43px;
+}
+
+button.google-login {
+  color: #6B6B6B;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+  background-color: #fff;
+
+  border: 1px solid #D2D2D2;
+  border-radius: 10px;
 }
 
 .signup {
