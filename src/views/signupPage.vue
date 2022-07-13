@@ -1,16 +1,29 @@
 <template>
-  <div class="page register">
+  <div class="page signup-page">
 
     <h1>회원가입</h1>
     <div class="msg">회원가입 하실 정보를 입력해주세요.</div>
 
+    <main>
+      <label class="email input-field">
+        <h5>이메일/아이디</h5>
+        <input type="email" placeholder="이메일 주소를 입려개주세요">
+        <input type="text" placeholder="아이디를 입력해주세요">
 
-    <label class="input-email-id">
-      <h5>이메일 및 아이디</h5>
-      <input type="email" placeholder="이메일 주소를 입력해주세요">
-      <input type="text" placeholder="아이디 주소를 입력해주세요">
-    </label>
+      </label>
 
+      <label class="password input-field">
+        <h5>비밀번호</h5>
+        <input type="password" class="pw-first" placeholder="비밀번호를 입력해주세요(8자리 이상)">
+        <input type="password" class="pw-second" placeholder="비밀번호를 확인해주세요">
+      </label>
+
+      <button class="login">회원가입</button>
+    </main>
+
+    <div class="login">
+      이미 회원이신가요? <span class="goto-login cr-p">로그인하기</span>
+    </div>
   </div>
 </template>
 
@@ -21,37 +34,106 @@ export default {
 </script>
 
 <style scoped>
+.signup-page {
+  padding-top: 135px;
+}
 h1 {
+  font-style: normal;
+  font-weight: 700;
   font-size: 35px;
+  line-height: 44px;
+  /* identical to box height */
 
-  margin-top: 135px;
-  margin-left: 8px;
+  color: #000000;
 }
 
 .msg {
-  color: #979797;
-  font-size: 18px;
+  font-style: normal;
   font-weight: 500;
+  font-size: 18px;
   line-height: 22px;
-  letter-spacing: 0em;
 
-  margin-left: 8px;
+  color: #979797;
+
   margin-top : 12px;
 }
 
-label {
-  width: 100%;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-
-  display: block;
-
-  margin-top: 20px;
+main {
+  margin-top: 84px;
 }
 
-label input:not(input[type=checkbox]) {
-  margin-top: 12px;
+label {
+  display: block;
+  cursor: pointer;
+}
+
+label h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.input-field input {
+   margin-top : 12px;
+}
+
+.input-field {
+  margin-top : 24px;
+}
+
+.login-tools {
+  margin-top: 32px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-tools > * {
+  font-family: 'SUIT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  text-align: center;
+}
+
+.memory-password {
+  color: #444444;
+}
+
+.find-password {
+  color: #5465A1;
+}
+
+button.login {
+  margin-top: 43px;
+}
+
+.login {
+  text-align: center;
+  margin-top: 40px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.goto-login {
+  color: #5465A1;
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 
 </style>

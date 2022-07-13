@@ -7,15 +7,18 @@ import signupPage from "@/views/signupPage";
 const routes = [
     {
         path: "/",
-        component: mainPage
+        component: mainPage,
+        name : "main",
     },
     {
         path: "/login",
-        component: loginPage
+        component: loginPage,
+        name : "login",
     },
     {
         path: "/signup",
-        component: signupPage
+        component: signupPage,
+        name : "signup",
     },
 ];
 
