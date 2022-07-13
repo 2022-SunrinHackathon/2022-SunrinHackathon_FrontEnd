@@ -19,12 +19,15 @@
         <label class="remember-password">
           <input type="checkbox"> 비밀번호 기억하기
         </label>
+
+        <div class="find-password">비밀번호/아이디 찾기</div>
+
       </div>
 
       <button class="login">로그인</button>
     </div>
 
-    <div class="signup">계정이 없으신가요? <b>회원가입</b>하기</div>
+    <div class="signup">계정이 없으신가요? <span class="goto-signup">회원가입하기</span></div>
   </div>
 </template>
 
@@ -38,26 +41,30 @@ export default {
 h1 {
   font-size: 35px;
 
-  margin-top: 160px;
+  margin-top: 135px;
+  margin-left: 8px;
 }
 
 .login-msg {
   color: #979797;
   font-size: 18px;
   font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
 
-  margin-top: 10px;
+  margin-left: 8px;
+  margin-top : 12px;
 }
 
 .login-box {
   margin-top: 57px;
 }
 
-.login-box label {
+.login-box > label {
   width: 100%;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
 
   display: block;
 
@@ -68,30 +75,41 @@ h1 {
   margin-top: 12px;
 }
 
+.login-tool-wrap {
+  display: flex;
+  justify-content: space-between;
 
-.login-tool-wrap > *{
+  margin-top: 32px;
+}
+
+.login-tool-wrap > * {
   display: inline;
 }
 
-.login-box label.remember-password {
+.login-box .remember-password {
   color: #444444;
-  font-weight: 600;
+  font-style: normal;
+  font-weight: 500;
   font-size: 16px;
+  line-height: 20px;
 }
 
-.login-box label.remember-password input {
+.login-box .remember-password input {
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
 }
 
 .find-password {
-  font-weight: 600;
+  font-style: normal;
+  font-weight: 500;
   font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
 
   text-align: right;
 
-  color: #000000;
+  color: #5465A1;
 }
 
 button.login {
@@ -99,9 +117,22 @@ button.login {
 }
 
 .signup {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
   text-align: center;
 
   margin-top: 25px;
+}
+
+.goto-signup {
+  color: #5465A1;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 
 </style>
