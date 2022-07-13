@@ -22,7 +22,7 @@
     </main>
 
     <div class="login">
-      이미 회원이신가요? <span class="goto-login cr-p">로그인하기</span>
+      이미 회원이신가요? <span class="goto-login cr-p" @click="$router.push({ name : 'login' })">로그인하기</span>
     </div>
   </div>
 </template>

@@ -7,12 +7,12 @@
     <main>
       <label class="email input-field">
         <h5>이메일/아이디</h5>
-        <input type="text" placeholder="이메일 주소/ 아이디를 입력해주세요">
+        <input type="text" placeholder="이메일 주소/ 아이디를 입력해주세요" v-model="inputEmail">
       </label>
 
       <label class="password input-field">
         <h5>비밀번호</h5>
-        <input type="password" placeholder="비밀번호를 입력해주세요">
+        <input type="password" placeholder="비밀번호를 입력해주세요" v-model="inputPassword">
       </label>
 
       <div class="login-tools">
@@ -27,14 +27,20 @@
     </main>
 
     <div class="signup">
-      계정이 없으신가요? <span class="goto-signup cr-p">회원가입하기</span>
+      계정이 없으신가요? <span class="goto-signup cr-p" @click="$router.push({ name : 'signup' })">회원가입하기</span>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "loginPage.vue"
+  name: "loginPage.vue",
+  data() {
+    return {
+      inputEmail: "",
+      inputPassword: ""
+    }
+  }
 }
 </script>
 
@@ -42,6 +48,7 @@ export default {
 .login-page {
   padding-top: 135px;
 }
+
 h1 {
   font-style: normal;
   font-weight: 700;
@@ -60,7 +67,7 @@ h1 {
 
   color: #979797;
 
-  margin-top : 12px;
+  margin-top: 12px;
 }
 
 main {
@@ -83,11 +90,11 @@ label h5 {
 }
 
 .input-field input {
-   margin-top : 12px;
+  margin-top: 12px;
 }
 
 .input-field {
-  margin-top : 24px;
+  margin-top: 24px;
 }
 
 .login-tools {
