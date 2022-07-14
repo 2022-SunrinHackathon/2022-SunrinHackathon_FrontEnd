@@ -1,11 +1,9 @@
 <template>
-  <div class="page login-page bottom-navi-page">
-    <div class="panel">
-      <header>
-        <h2>EDCAN</h2>
+  <div class="page login-page header-page bottom-navi-page">
+    <Header/>
 
-        <img src="./../assets/main/search_icon.svg" alt="">
-      </header>
+    <div class="panel">
+
     </div>
 
     <BottomNavi/>
@@ -16,6 +14,7 @@
 
 <script>
 import BottomNavi from "@/components/BottomNavi";
+import Header from "@/components/Header";
 
 export default {
   name: "loginPage.vue",
@@ -26,8 +25,8 @@ export default {
     }
   },
   components: {
+    Header,
     BottomNavi
-
   }
 }
 </script>
