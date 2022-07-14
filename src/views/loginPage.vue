@@ -84,7 +84,6 @@ label h5 {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  /* identical to box height */
 
   color: #000000;
 }

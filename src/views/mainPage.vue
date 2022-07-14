@@ -1,26 +1,44 @@
 <template>
-  <button @click="a">클릭</button>
+  <div class="page login-page">
 
-<!--  {{ $store.state.postList }}-->
-  <div v-for="i, n in $store.state.postList" :key="n">{{ i }}</div>
+    <header>
+      <h2>EDCAN</h2>
+
+      <img src="./../assets/main/search_icon.svg" alt="">
+    </header>
+
+  </div>
 </template>
 
 <script>
-import { getPost } from "/src/api"
-
 export default {
-  name: "mainPage",
+  name: "loginPage.vue",
   data() {
-    return {}
-  },
-  methods: {
-    a(){
-      getPost()
+    return {
+      inputEmail: "",
+      inputPassword: ""
     }
   }
 }
 </script>
 
 <style scoped>
+
+header {
+  padding : 16px 8px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+header h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #6F8BEC;
+
+  display: inline;
+}
 
 </style>
