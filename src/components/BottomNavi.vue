@@ -1,21 +1,26 @@
 <template>
   <ul class="bottom-navigation">
-    <router-link to="" class="link">
+
+    <router-link to="/" class="link">
       <img src="../assets/bottom_navigation/home_icon.svg" alt="메인페이지 아이콘">
       <div>홈</div>
     </router-link>
+
     <router-link to="/main" class="link">
       <img src="../assets/bottom_navigation/bug_icon.svg" alt="테스트페이지 아이콘">
       <div>테스트</div>
     </router-link>
+
     <router-link to="/main" class="link">
       <img src="../assets/bottom_navigation/bug_icon.svg" alt="테스트페이지 아이콘">
       <div>테스트</div>
     </router-link>
-    <router-link to="/main" class="link">
+
+    <router-link to="/profile" class="link">
       <img src="../assets/bottom_navigation/profile_icon.svg" alt="프로필페이지 아이콘">
       <div>프로필</div>
     </router-link>
+
   </ul>
 </template>
 <script>
@@ -45,9 +50,11 @@ header h2 {
 </style>
 <style scoped>
 .bottom-navigation {
+  background-color: #F7F8FA;
+
   list-style: none;
 
-  padding: 20px;
+  padding: 15px;
 
   display: flex;
   justify-content: space-around;
@@ -70,8 +77,14 @@ header h2 {
   line-height: 15px;
 
   text-align: center;
+}
 
+.bottom-navigation .link:not(.router-link-active) div {
   color: #858992;
+}
+
+.bottom-navigation .router-link-active {
+  color: #0044cb;
 }
 
 </style>
