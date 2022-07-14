@@ -1,16 +1,22 @@
 <template>
-  <div class="page login-page">
+  <div class="page login-page bottom-navi-page">
+    <div class="panel">
+      <header>
+        <h2>EDCAN</h2>
 
-    <header>
-      <h2>EDCAN</h2>
+        <img src="./../assets/main/search_icon.svg" alt="">
+      </header>
+    </div>
 
-      <img src="./../assets/main/search_icon.svg" alt="">
-    </header>
+    <BottomNavi/>
+
 
   </div>
 </template>
 
 <script>
+import BottomNavi from "@/components/BottomNavi";
+
 export default {
   name: "loginPage.vue",
   data() {
@@ -18,6 +24,10 @@ export default {
       inputEmail: "",
       inputPassword: ""
     }
+  },
+  components: {
+    BottomNavi
+
   }
 }
 </script>
@@ -39,6 +49,25 @@ header h2 {
   color: #6F8BEC;
 
   display: inline;
+}
+
+</style>
+
+<style scoped>
+
+.bottom-navigation .link img {
+  width: 30px;
+}
+
+.bottom-navigation .link div {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+
+  text-align: center;
+
+  color: #858992;
 }
 
 </style>

@@ -64,10 +64,21 @@ export default {
 
 .page {
   width : 100%;
-  max-width: 412px;
+  /*max-width: 412px;*/
+  max-width: 512px;
   height: 100vh;
 
   padding: 0 30px;
   margin: 0 auto;
+}
+
+.page.bottom-navi-page {
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 </style>
