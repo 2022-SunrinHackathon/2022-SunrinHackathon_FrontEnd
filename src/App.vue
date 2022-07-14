@@ -74,7 +74,7 @@ export default {
 
 .page.bottom-navi-page {
   display: grid;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: auto 1fr auto;
 }
 
 a {
