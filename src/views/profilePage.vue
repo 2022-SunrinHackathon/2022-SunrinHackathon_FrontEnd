@@ -14,7 +14,7 @@
 
 <script>
 import BottomNavi from "@/components/BottomNavi";
-import Header from "@/views/Header";
+import Header from "@/components/Header";
 
 export default {
   name: "loginPage.vue",

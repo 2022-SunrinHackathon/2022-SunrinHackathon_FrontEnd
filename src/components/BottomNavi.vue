@@ -50,6 +50,10 @@ header h2 {
 </style>
 <style scoped>
 .bottom-navigation {
+  width: 100%;
+  max-width: 512px;
+  height: 79px;
+
   background-color: #F7F8FA;
 
   list-style: none;
@@ -58,6 +62,12 @@ header h2 {
 
   display: flex;
   justify-content: space-around;
+
+  position: fixed;
+  left: 50%;
+  bottom: 0px;
+
+  transform: translateX(-50%);
 }
 
 .bottom-navigation .link {
@@ -79,12 +89,16 @@ header h2 {
   text-align: center;
 }
 
-.bottom-navigation .link:not(.router-link-active) div {
+.bottom-navigation .link:not(.router-link-active) {
+  fill: #858992;
+  stroke: #858992;
   color: #858992;
 }
 
 .bottom-navigation .router-link-active {
-  color: #0044cb;
+  fill: #6F8AEC;
+  stroke: #6F8AEC;
+  color: #6F8AEC;
 }
 
 </style>

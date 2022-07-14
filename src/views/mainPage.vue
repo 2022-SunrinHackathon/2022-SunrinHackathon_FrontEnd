@@ -1,5 +1,5 @@
 <template>
-  <div class="page login-page bottom-navi-page">
+  <div class="page login-page header-page bottom-navi-page">
     <Header/>
 
     <div class="panel">
@@ -14,7 +14,7 @@
 
 <script>
 import BottomNavi from "@/components/BottomNavi";
-import Header from "@/views/Header";
+import Header from "@/components/Header";
 
 export default {
   name: "loginPage.vue",
