@@ -1,40 +1,19 @@
 <template>
-  <div class="page login-page bottom-navi-page">
-    <Header/>
+  <header>
+    <h2>EDCAN</h2>
 
-    <div class="panel">
-
-    </div>
-
-    <BottomNavi/>
-
-
-  </div>
+    <img src="./../assets/main/search_icon.svg" alt="">
+  </header>
 </template>
-
 <script>
-import BottomNavi from "@/components/BottomNavi";
-import Header from "@/views/Header";
-
 export default {
-  name: "loginPage.vue",
-  data() {
-    return {
-      inputEmail: "",
-      inputPassword: ""
-    }
-  },
-  components: {
-    Header,
-    BottomNavi
-  }
+  name: 'NewComponent'
 }
 </script>
-
 <style scoped>
 
 header {
-  padding : 16px 8px;
+  padding: 16px 8px;
 
   display: flex;
   justify-content: space-between;
@@ -51,7 +30,6 @@ header h2 {
 }
 
 </style>
-
 <style scoped>
 
 .bottom-navigation .link img {
