@@ -1,0 +1,71 @@
+input:not(input[type=checkbox]) {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+
+    background: #F0F0F0;
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+    padding: 17px;
+}
+
+input:not(input[type=checkbox])::placeholder {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #969696;
+}
+
+input:not(input[type=checkbox]):focus {
+    outline: none;
+}
+
+button {
+    width: 100%;
+
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+
+    background: #444444;
+
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+    padding: 15px 0;
+
+    cursor: pointer;
+}
+
+.cr-p {
+    cursor: pointer;
+}
+
+
+/* 디버깅 테스트용 */
+.bg-r {
+    background-color: #f00;
+}
+
+.bg-b {
+    background-color: #00f;
+}
+
+.bg-g {
+    background-color: #0f0;
+}
+
+.br-r {
+    border : 1px solid #f00;
+}
+
+.br-b {
+    border : 1px solid #00f;
+}
+
+.br-g {
+    border : 1px solid #0f0;
+}
