@@ -3,7 +3,7 @@
     <Header/>
 
     <div class="panel">
-
+      <button @click="fin1">클릭</button>
     </div>
 
     <BottomNavi/>
@@ -16,12 +16,25 @@
 import BottomNavi from "@/components/BottomNavi";
 import Header from "@/views/Header";
 
+import { db } from "@/firebase"
+import { collection, addDoc } from "firebase/firestore";
+
 export default {
   name: "loginPage.vue",
   data() {
     return {
       inputEmail: "",
       inputPassword: ""
+    }
+  },
+  methods : {
+    async fin1(){
+      const docRef = await addDoc(collection(db, "users"), {
+        first: "Ada",
+        last: "Lovelace",
+        born: 1815
+      });
+      console.log("Document written with ID: ", docRef.id);
     }
   },
   components: {
