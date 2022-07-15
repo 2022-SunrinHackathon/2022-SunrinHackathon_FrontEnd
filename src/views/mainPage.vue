@@ -1,9 +1,9 @@
 <template>
-  <div class="page login-page header-page bottom-navi-page">
+  <div class="page login-page bottom-navi-page">
     <Header/>
 
     <div class="panel">
-
+      <button @click="fin1">클릭</button>
     </div>
 
     <BottomNavi/>
@@ -14,7 +14,10 @@
 
 <script>
 import BottomNavi from "@/components/BottomNavi";
-import Header from "@/components/Header";
+import Header from "@/views/Header";
+
+import { db } from "@/firebase"
+import { collection, addDoc } from "firebase/firestore";
 
 export default {
   name: "loginPage.vue",
@@ -22,6 +25,16 @@ export default {
     return {
       inputEmail: "",
       inputPassword: ""
+    }
+  },
+  methods : {
+    async fin1(){
+      const docRef = await addDoc(collection(db, "users"), {
+        first: "Ada",
+        last: "Lovelace",
+        born: 1815
+      });
+      console.log("Document written with ID: ", docRef.id);
     }
   },
   components: {

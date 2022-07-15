@@ -64,27 +64,17 @@ export default {
 
 .page {
   width : 100%;
+  /*max-width: 412px;*/
   max-width: 512px;
   height: 100vh;
 
   padding: 0 30px;
   margin: 0 auto;
-
-  position: relative;
-
-  /*background-color: #ff0000;*/
 }
 
-.panel {
-  overflow: auto;
-}
-
-.page.bottom-navi-page .panel {
-  padding-bottom: 79px;
-}
-
-.page.header-page .panel {
-  padding-top: 62px;
+.page.bottom-navi-page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 a {
